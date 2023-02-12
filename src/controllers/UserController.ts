@@ -5,12 +5,16 @@ import { User } from "../entities/User";
 
 class UserController {
   static listAll = async (req: Request, res: Response) => {
+    // const test = AppDataSource.getRepository(User);
+    // const allUsers = await test.createQueryBuilder("slave").getMany();
+    // console.log("allUsers: ", allUsers);
     //Get users from database
     const userRepository = AppDataSource.getRepository(User);
     const users = await userRepository.find({
       select: ["id", "username", "role"], //We dont want to send the passwords on response
     });
 
+    console.log("users: ", users);
     //Send the users object
     return res.send(users);
   };

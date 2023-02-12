@@ -10,7 +10,19 @@
     "typeorm:run-migrations": "npm run typeorm migration:run -- -d ./src/utils/data-source.ts",
     "typeorm:generate-migration": "npm run typeorm -- -d ./src/utils/data-source.ts migration:generate ./src/migrations/$npm_config_name",
     "typeorm:create-migration": "npm run typeorm -- migration:create ./src/migrations/$npm_config_name",
-    "typeorm:revert-migration": "npm run typeorm -- -d ../src/utils/data-source.ts migration:revert"
+    "typeorm:revert-migration": "npm run typeorm -- -d ../src/utils/data-source.ts migration:revert",
+    "typeorm:run-migrations-a": "npm run typeorm migration:run -- -d ./src/utils/data-source-compA.ts",
+    "typeorm:generate-migration-a": "npm run typeorm -- -d ./src/utils/data-source-compA.ts migration:generate ./src/migrations/$npm_config_name",
+    "typeorm:revert-migration-a": "npm run typeorm -- -d ../src/utils/data-source-compA.ts migration:revert",
+    "typeorm:run-migrations-b": "npm run typeorm migration:run -- -d ./src/utils/data-source-compB.ts",
+    "typeorm:generate-migration-b": "npm run typeorm -- -d ./src/utils/data-source-compB.ts migration:generate ./src/migrations/$npm_config_name",
+    "typeorm:revert-migration-b": "npm run typeorm -- -d ../src/utils/data-source-compB.ts migration:revert",
+    "typeorm:run-migrations-c": "npm run typeorm migration:run -- -d ./src/utils/data-source-compC.ts",
+    "typeorm:generate-migration-c": "npm run typeorm -- -d ./src/utils/data-source-compC.ts migration:generate ./src/migrations/$npm_config_name",
+    "typeorm:revert-migration-c": "npm run typeorm -- -d ../src/utils/data-source-compC.ts migration:revert",
+    "typeorm:run-migrations-d": "npm run typeorm migration:run -- -d ./src/utils/data-source-compD.ts",
+    "typeorm:generate-migration-d": "npm run typeorm -- -d ./src/utils/data-source-compD.ts migration:generate ./src/migrations/$npm_config_name",
+    "typeorm:revert-migration-d": "npm run typeorm -- -d ../src/utils/data-source-compD.ts migration:revert"
   },
   "repository": {
     "type": "git",
