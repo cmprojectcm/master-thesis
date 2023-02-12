@@ -4,10 +4,10 @@ node_modules/
 build/
 tmp/
 temp/
+src/db/
 .env
 .env.development
 .env.staging
 .env.production
 docker-compose.yaml
 package-lock.json
-./src/db/
